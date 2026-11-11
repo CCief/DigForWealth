@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ccief.github.io/DigForWealth/sitemap.xml

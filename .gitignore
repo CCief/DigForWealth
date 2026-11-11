@@ -1,0 +1,5 @@
+# 站点维护用的本地临时文件不入库
+.local/
+*.log
+.DS_Store
+Thumbs.db
