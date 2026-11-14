@@ -44,7 +44,9 @@ a { color: var(--sky-deep); text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1, h2, h3, h4 { line-height: 1.35; margin: 0 0 .6em; font-weight: 800; letter-spacing: .01em; }
 p { margin: 0 0 1em; }
-img { max-width: 100%; display: block; }
+/* height:auto 必须保留：HTML 的 height="640" 会作为呈现提示变成固定高度，
+   若只覆盖 width 就会把正方形图标压成竖长条。 */
+img { max-width: 100%; height: auto; display: block; }
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: .9em;
@@ -58,6 +60,10 @@ code {
   background: var(--surface); padding: 10px 16px; border-radius: 8px;
 }
 .skip:focus { left: 12px; top: 12px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
 
 /* ---------- 顶部公告：爱发电公开标注 ---------- */
 .topbar {
@@ -92,6 +98,7 @@ code {
 .brand:hover { text-decoration: none; }
 .brand-icon {
   width: 42px; height: 42px; border-radius: 12px;
+  object-fit: cover;
   border: 2px solid #fff;
   box-shadow: 0 4px 12px rgba(61, 42, 28, .18);
 }
@@ -184,7 +191,9 @@ code {
 }
 .hero-art { position: relative; }
 .hero-art img {
-  width: 100%; border-radius: 30px;
+  width: 100%; height: auto;
+  aspect-ratio: 1 / 1; object-fit: cover;
+  border-radius: 30px;
   border: 7px solid #fff;
   box-shadow: var(--shadow-lg);
   transform: rotate(-2deg);
@@ -290,6 +299,42 @@ code {
 }
 .timeline h3 { font-size: 18px; margin-bottom: 4px; }
 .timeline p { color: var(--muted); font-size: 14.5px; margin: 0; }
+
+/* ---------- 数字商店 ---------- */
+.breadcrumb { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+.breadcrumb a { font-weight: 700; }
+.store-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: stretch; }
+.store-card {
+  display: flex; flex-direction: column;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.store-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.store-card--featured { border: 2px solid var(--gold); }
+.store-card--empty { border-style: dashed; background: transparent; box-shadow: none; }
+.store-card--empty:hover { transform: none; box-shadow: none; }
+.store-cover {
+  position: relative; aspect-ratio: 16 / 9;
+  background: linear-gradient(160deg, #a8d9f6 0%, #dff1fc 62%, #fff3d2 100%);
+  display: grid; place-items: center;
+  padding: 16px; overflow: hidden;
+}
+.store-cover img {
+  width: 100%; height: 100%;
+  object-fit: contain; border-radius: 14px;
+}
+.store-cover-glyph { font-size: 52px; line-height: 1; opacity: .6; }
+.store-badge { position: absolute; top: 12px; left: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+.store-body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+.store-body h2, .store-body h3 { font-size: 23px; margin-bottom: 4px; }
+.store-kicker { font-size: 12px; letter-spacing: .14em; font-weight: 800; color: var(--sky-deep); margin-bottom: 8px; }
+.store-price { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 8px 0 14px; }
+.store-price b { font-size: 38px; line-height: 1.1; color: var(--gold-deep); }
+.store-price span { font-size: 13px; color: var(--muted); }
+.store-desc { color: var(--muted); font-size: 14.5px; margin: 0 0 14px; }
+.store-actions { margin-top: auto; padding-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.store-state { font-size: 13px; color: var(--muted); }
 
 /* ---------- 内测资格 / 商品 ---------- */
 .product-card {
@@ -411,6 +456,7 @@ code {
   .hero-copy { max-width: none; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .store-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 20px; }
   .support-card { padding: 28px 24px; }
   .claim { padding: 22px 20px; }
