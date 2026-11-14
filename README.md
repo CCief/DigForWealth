@@ -1,4 +1,4 @@
-# 掘地生财 · DigForWealth
+# 掘地生财 · ExcavaWealth
 
 > 从挖地开始，以富足为目标。
 
