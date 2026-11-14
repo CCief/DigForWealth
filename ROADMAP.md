@@ -19,7 +19,7 @@
 | 玩家中心 | `account.html` | 已上线，**占位说明，无登录无查询** |
 | 创作者认证 | `support.html` | 保留，`rel="me"` 与爱发电完整地址不变 |
 
-- 全站纯 HTML/CSS、**零 JavaScript**，托管于 GitHub Pages：`https://ccief.github.io/DigForWealth/`
+- 全站纯 HTML/CSS、**零 JavaScript**，托管于 GitHub Pages：`https://ccief.github.io/ExcavaWealth/`
 - 数字商店只做商品陈列与状态说明：不创建订单、不收集信息、不发放兑换码；游戏图标按原始正方形比例显示
 - 游戏图标：`assets/icon.png`、`assets/icon-original.jpg`、`favicon.ico`、`assets/og-image.png`
 - 主题：天空蓝 / 金币黄 / 泥土棕 / 草地绿 / 奶油白，响应式，支持 `prefers-reduced-motion`
@@ -223,7 +223,7 @@ CREATE TABLE admin_logs (
 | `SESSION_SECRET` | 会话/取货凭证签名 | 自己生成，同上 |
 | `OAUTH_CLIENT_ID` / `OAUTH_CLIENT_SECRET` | 爱发电 OAuth2 登录 | **尚未申请**：私信官方，提供应用名称、用途、可信域名、`clientSecret`（可选），官方回给；申请入口见官方文档 |
 | `API_BASE_URL` | 官网前端指向的 Worker 地址 | 部署 Worker 后得到（`https://<name>.<subdomain>.workers.dev` 或自定义域名） |
-| `D1_DATABASE_ID` | 绑定数据库 | `wrangler d1 create digforwealth` 后写进 `wrangler.toml`（非密钥） |
+| `D1_DATABASE_ID` | 绑定数据库 | `wrangler d1 create excavawealth` 后写进 `wrangler.toml`（非密钥） |
 | 自定义域名（可选） | 官网/API 用自有域名 | 域名注册商购买，在 Cloudflare 与 GitHub Pages 两侧配置 |
 
 **爱发电 Webhook 地址配置**：在 <https://ifdian.net/dashboard/dev> 把通知地址填成 Worker 的 `/api/webhook/afdian`，并用官方 `ping` 接口先验证 API 签名是否正确。
@@ -262,13 +262,13 @@ CREATE TABLE admin_logs (
 
 ## 8. 部署说明（现状与后续）
 
-**现在（GitHub Pages）**：仓库 `main` 分支根目录即为站点源码，Pages 从 `main` + `/` 发布，`.nojekyll` 保留。推送 `main` 后自动更新 <https://ccief.github.io/DigForWealth/>。
+**现在（GitHub Pages）**：仓库 `main` 分支根目录即为站点源码，Pages 从 `main` + `/` 发布，`.nojekyll` 保留。推送 `main` 后自动更新 <https://ccief.github.io/ExcavaWealth/>。
 
 **后续（阶段二起，尚未执行）**：
 
 1. `npm create cloudflare@latest worker` 或手写 `worker/wrangler.toml` + `worker/src/index.ts`
-2. `wrangler d1 create digforwealth` → 把 `database_id` 填进 `wrangler.toml`（可入库）
-3. `wrangler d1 migrations apply digforwealth --local` 先本地跑通，再 `--remote`
+2. `wrangler d1 create excavawealth` → 把 `database_id` 填进 `wrangler.toml`（可入库）
+3. `wrangler d1 migrations apply excavawealth --local` 先本地跑通，再 `--remote`
 4. `wrangler secret put AFDIAN_API_TOKEN` 等逐项写入；本地用 `worker/.dev.vars`
 5. `wrangler deploy` → 得到 Worker 地址 → 填入前端 `API_BASE_URL`
 6. 在爱发电开发者后台把 Webhook 地址设为 `https://<worker>/api/webhook/afdian`

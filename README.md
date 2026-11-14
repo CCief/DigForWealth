@@ -12,7 +12,7 @@
 
 | 用途 | 位置 |
 | --- | --- |
-| 🌐 官方网站 | <https://ccief.github.io/DigForWealth/> · `index.html` 等静态页 |
+| 🌐 官方网站 | <https://ccief.github.io/ExcavaWealth/> · `index.html` 等静态页 |
 | 📒 更新日志 | [`CHANGELOG.md`](CHANGELOG.md) · 官网「开发日志」静态副本 |
 | ✅ 爱发电认证主页 | [`support.html`](support.html) · <https://afdian.com/a/CCief> |
 | 🗺️ 内测购买与发码系统计划 | [`ROADMAP.md`](ROADMAP.md) |
@@ -21,7 +21,7 @@
 
 ## 官方网站
 
-**<https://ccief.github.io/DigForWealth/>**（GitHub Pages，`main` 分支根目录直接发布，`.nojekyll` 保留）
+**<https://ccief.github.io/ExcavaWealth/>**（GitHub Pages，`main` 分支根目录直接发布，`.nojekyll` 保留）
 
 | 页面 | 文件 | 内容 |
 | --- | --- | --- |
@@ -55,7 +55,7 @@
 
 官方创作者 FAQ 的三条标准与本站落实方式：
 
-1. **完整、有效的主页网址** → <https://ccief.github.io/DigForWealth/> 或 <https://ccief.github.io/DigForWealth/support.html>
+1. **完整、有效的主页网址** → <https://ccief.github.io/ExcavaWealth/> 或 <https://ccief.github.io/ExcavaWealth/support.html>
 2. **主页中公开宣传爱发电** → 顶部公告条、按钮、赞助区、页脚与认证专页均以纯文本写出完整地址 `https://afdian.com/a/CCief`，链接使用真实 `<a href>` 且带 `rel="me"`
 3. **主页中有创作内容** → 游戏图标、介绍、玩法草案、公告与持续维护的更新日志
 

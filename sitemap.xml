@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ccief.github.io/DigForWealth/</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/game.html</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/game.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/news.html</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/news.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/store.html</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/store.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/beta.html</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/beta.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/account.html</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/account.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/support.html</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/support.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/CHANGELOG.md</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/CHANGELOG.md</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ccief.github.io/DigForWealth/ROADMAP.md</loc>
+    <loc>https://ccief.github.io/ExcavaWealth/ROADMAP.md</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

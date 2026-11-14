@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ccief.github.io/DigForWealth/sitemap.xml
+Sitemap: https://ccief.github.io/ExcavaWealth/sitemap.xml

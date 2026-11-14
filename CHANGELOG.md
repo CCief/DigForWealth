@@ -8,6 +8,17 @@
 
 ---
 
+## [2026-11-14] 仓库更名 · 官网网址同步
+
+### 变更
+
+- 仓库已更名为 `CCief/ExcavaWealth`，GitHub Pages 网址随之变为 <https://ccief.github.io/ExcavaWealth/>；旧的 Pages 路径已返回 404，且不会自动跳转。
+- 全站 canonical、sitemap、robots、页脚链接、GitHub 仓库链接与社交分享图地址同步更新，避免死链。
+- 创作者认证专页 `support.html` 中「提交用主页网址」同步更新为新地址；`ROADMAP.md` 里的 D1 数据库示例名也一并统一。
+- 游戏英文名仍为 `ExcavaWealth`，中文名《掘地生财》不变；本次只改网址与仓库标识。
+
+---
+
 ## [2026-11-14] 数字商店商品封面改用横幅插画
 
 ### 修复
@@ -71,8 +82,8 @@
 ### 新增
 
 - 项目立项，暂定名《掘地生财》，英文名后定为 `ExcavaWealth`。核心方向定为：挖掘财富，经营生活，打造属于自己的天地 —— 从一无所有开始挖矿、出售矿石换取第一桶金，再购买家具与装饰品布置自己的小家；没有必须完成的目标，是一段慢生活体验。（**企划草案，尚未实装**）
-- 创建公开仓库 `CCief/DigForWealth`，并明确约定：**仓库不存放游戏源码**，只维护更新日志、官网静态页面与创作者认证材料。
-- 上线 GitHub Pages 官方网站 <https://ccief.github.io/DigForWealth/>，包含游戏介绍、核心循环草案、开发日志与赞助公告；站点为纯 HTML/CSS、零 JavaScript，保证内容可直接阅读与抓取。
+- 创建公开仓库 `CCief/ExcavaWealth`，并明确约定：**仓库不存放游戏源码**，只维护更新日志、官网静态页面与创作者认证材料。
+- 上线 GitHub Pages 官方网站 <https://ccief.github.io/ExcavaWealth/>，包含游戏介绍、核心循环草案、开发日志与赞助公告；站点为纯 HTML/CSS、零 JavaScript，保证内容可直接阅读与抓取。
 - 官网公开宣传爱发电主页 <https://afdian.com/a/CCief>：首屏公告条、Hero 按钮、赞助区、页脚均写出完整地址并使用真实链接。
 - 新增 `support.html` 创作者认证专页，声明本站与爱发电主页的归属关系，用于爱发电创作者认证申请。
 - 新增 `robots.txt` 与 `sitemap.xml`，便于公开检索与审核访问。
