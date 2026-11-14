@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>内测资格 · 掘地生财 DigForWealth</title>
+<meta name="description" content="《掘地生财》内测资格购买说明：计划价 ¥1、资格说明、购买须知与自动发码系统当前状态。">
+<meta name="author" content="CCief">
+<meta name="theme-color" content="#4fa3e3">
+<link rel="canonical" href="https://ccief.github.io/DigForWealth/beta.html">
+<link rel="me" href="https://afdian.com/a/CCief">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="topbar">
+  <span class="topbar-dot" aria-hidden="true"></span>
+  <span>官方唯一赞助渠道：<strong>爱发电</strong> · <a href="https://afdian.com/a/CCief" rel="me">https://afdian.com/a/CCief</a> · 本站由创作者 <strong>CCief</strong> 本人维护</span>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="./">
+    <img class="brand-icon" src="assets/icon.png" alt="《掘地生财》游戏图标" width="42" height="42">
+    <span class="brand-text"><b>掘地生财</b><small>DigForWealth</small></span>
+  </a>
+  <nav aria-label="主导航">
+    <a href="./">首页</a>
+    <a href="game.html">游戏介绍</a>
+    <a href="news.html">公告</a>
+    <a href="beta.html" aria-current="page">内测资格</a>
+    <a href="account.html">玩家中心</a>
+    <a href="support.html">认证说明</a>
+    <a href="https://github.com/CCief/DigForWealth">GitHub</a>
+    <a class="nav-cta" href="https://afdian.com/a/CCief" rel="me">爱发电 ↗</a>
+  </nav>
+</header>
+
+<main id="main" class="page-main">
+  <div class="page-head">
+    <p class="kicker">BETA ACCESS</p>
+    <h1>内测资格</h1>
+    <p class="lead">付款成功后由本站自己的系统分配专属兑换码，爱发电只负责收款。目前这套系统仍在开发中，<strong>购买尚未开放</strong>。</p>
+  </div>
+
+  <section class="section" aria-labelledby="product-title">
+    <div class="product-card">
+      <div class="news-meta"><span class="pill pill-gold">计划中</span><span class="pill pill-muted">购买未开放</span></div>
+      <h2 id="product-title">《掘地生财》内测资格</h2>
+      <div class="price"><b>¥1</b><span>计划价 · 最终价格由后端商品配置决定，页面届时会同步</span></div>
+      <ul class="product-list">
+        <li>参与后续内测版本的资格（具体权益、开放时间与平台以正式公告为准）</li>
+        <li>每个订单对应一枚专属兑换码，由官网后端分配</li>
+        <li>兑换码与玩家订单绑定，可在玩家中心查询与领取</li>
+      </ul>
+      <p><span class="btn is-disabled" aria-disabled="true">购买 · 暂未开放</span></p>
+      <p class="footer-muted" style="margin:12px 0 0">自动订单创建、支付核验与兑换码发放尚未上线。本页不创建订单、不收集任何个人信息、不发放兑换码。</p>
+    </div>
+    <p class="callout" style="margin-top:20px"><strong>请勿现在付款购买资格。</strong>当前通过<a href="https://afdian.com/a/CCief" rel="me">爱发电</a>赞助属于单纯支持创作，<strong>不会</strong>自动获得内测兑换码。开放前会在<a href="news.html">公告页</a>与本页明确通知。</p>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="notice-title">
+    <h2 id="notice-title">购买须知</h2>
+    <table class="table">
+      <thead><tr><th scope="col">项目</th><th scope="col">说明</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">收款方</th><td>爱发电（<a href="https://afdian.com/a/CCief" rel="me">https://afdian.com/a/CCief</a>）。爱发电只负责收款，不生成、不发放本站兑换码。</td></tr>
+        <tr><th scope="row">发码方</th><td>《掘地生财》官网后端。兑换码的生成、分配、验证与记录全部由本站系统负责。</td></tr>
+        <tr><th scope="row">付款认定</th><td>只认爱发电官方 Webhook 通知与订单查询 API 的核验结果。返回官网、手动输入订单号、前端参数、付款截图都不作为付款成功依据。</td></tr>
+        <tr><th scope="row">兑换码</th><td>由后端使用安全随机数生成，一单一码、一次有效；不使用爱发电的自动回复发码。</td></tr>
+        <tr><th scope="row">账号</th><td>爱发电 OAuth2 尚未申请，登录方案待定；在方案确定前不会开放玩家中心与兑换功能。</td></tr>
+        <tr><th scope="row">退款</th><td>数字商品资格相关规则以正式开放时公布的条款为准。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" aria-labelledby="flow-title">
+    <h2 id="flow-title">目标支付流程与当前实现状态</h2>
+    <p class="lead">这是设计目标，不是已上线功能。每一步的真实状态都标在下面。</p>
+    <ol class="steps" style="margin-top:22px">
+      <li><p><strong>玩家在官网点击购买</strong><span class="step-state">未实现 · 需要后端</span></p></li>
+      <li><p><strong>官网后端创建唯一待支付订单</strong><span class="step-state">未实现 · 需要 D1 数据库</span></p></li>
+      <li><p><strong>跳转到爱发电对应商品付款</strong><span class="step-state">未实现 · 需要商品 plan_id，可由下单 URL 的 custom_order_id 携带本站订单号</span></p></li>
+      <li><p><strong>爱发电 Webhook 通知官网后端</strong><span class="step-state">未实现 · 已查证官方支持 Webhook，需配置通知地址并做 RSA-SHA256 验签</span></p></li>
+      <li><p><strong>后端核验签名、订单状态、金额、商品</strong><span class="step-state">未实现 · 需结合 query-order API 复核</span></p></li>
+      <li><p><strong>后端为该订单分配专属兑换码</strong><span class="step-state">未实现 · 需幂等与事务保证一单一码</span></p></li>
+      <li><p><strong>玩家返回官网，在玩家中心查看并领取兑换码</strong><span class="step-state">未实现 · 依赖账号方案</span></p></li>
+      <li><p><strong>玩家在游戏内兑换，后端验证并绑定</strong><span class="step-state">未实现 · 游戏本体尚未发布</span></p></li>
+    </ol>
+    <p class="note">实现顺序、数据库结构与安全要求见 <a href="ROADMAP.md">ROADMAP.md</a>。在正式公告前，以上任何一步都不具备实际功能。</p>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="faq-title">
+    <h2 id="faq-title">常见问题</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>现在付款能拿到兑换码吗？</h3>
+        <p>不能。自动发码系统尚未上线，爱发电赞助不发放内测资格。请以本页与公告页的状态为准。</p>
+      </div>
+      <div class="faq-item">
+        <h3>为什么要用自己的系统发码？</h3>
+        <p>爱发电的自动回复不适合作为兑换码发放机制；由官网核验支付并生成兑换码，才能做到一单一码、可验证、可查询、可禁用。</p>
+      </div>
+      <div class="faq-item">
+        <h3>付款后怎么找回自己的订单？</h3>
+        <p>正式开放后通过玩家中心查看订单与兑换码。由于爱发电 OAuth2 尚未申请，玩家身份方案仍在设计中，确定后会在公告里说明。</p>
+      </div>
+      <div class="faq-item">
+        <h3>我能先赞助支持创作吗？</h3>
+        <p>可以，<a href="https://afdian.com/a/CCief" rel="me">爱发电主页</a>是官方唯一赞助渠道。但请明确：这属于赞助，不包含内测资格或兑换码。</p>
+      </div>
+    </div>
+    <p style="margin-top:22px"><a class="btn btn-outline" href="account.html">玩家中心（占位说明）→</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">掘地生财 <small>DigForWealth</small></p>
+      <p>从挖地开始，以富足为目标。</p>
+      <p class="footer-muted">当前状态：企划阶段 · 暂无可下载版本</p>
+    </div>
+    <div>
+      <p class="footer-title">官方链接</p>
+      <p>爱发电：<a href="https://afdian.com/a/CCief" rel="me">https://afdian.com/a/CCief</a></p>
+      <p>官网：<a href="https://ccief.github.io/DigForWealth/">https://ccief.github.io/DigForWealth/</a></p>
+      <p>仓库：<a href="https://github.com/CCief/DigForWealth">github.com/CCief/DigForWealth</a></p>
+    </div>
+    <div>
+      <p class="footer-title">站内</p>
+      <p><a href="./">首页</a> · <a href="game.html">游戏介绍</a> · <a href="news.html">公告</a></p>
+      <p><a href="account.html">玩家中心</a> · <a href="CHANGELOG.md">更新日志</a> · <a href="support.html">认证专页</a></p>
+      <p class="footer-muted">本仓库不存放游戏源码</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 CCief · 本站文案与更新日志版权归 CCief 所有 · 未声明开源许可</p>
+</footer>
+</body>
+</html>

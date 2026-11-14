@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>玩家中心 · 掘地生财 DigForWealth</title>
+<meta name="description" content="《掘地生财》玩家中心：订单查询、兑换码领取与兑换记录。当前未开放，仅为功能说明。">
+<meta name="author" content="CCief">
+<meta name="theme-color" content="#4fa3e3">
+<link rel="canonical" href="https://ccief.github.io/DigForWealth/account.html">
+<link rel="me" href="https://afdian.com/a/CCief">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="topbar">
+  <span class="topbar-dot" aria-hidden="true"></span>
+  <span>官方唯一赞助渠道：<strong>爱发电</strong> · <a href="https://afdian.com/a/CCief" rel="me">https://afdian.com/a/CCief</a> · 本站由创作者 <strong>CCief</strong> 本人维护</span>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="./">
+    <img class="brand-icon" src="assets/icon.png" alt="《掘地生财》游戏图标" width="42" height="42">
+    <span class="brand-text"><b>掘地生财</b><small>DigForWealth</small></span>
+  </a>
+  <nav aria-label="主导航">
+    <a href="./">首页</a>
+    <a href="game.html">游戏介绍</a>
+    <a href="news.html">公告</a>
+    <a href="beta.html">内测资格</a>
+    <a href="account.html" aria-current="page">玩家中心</a>
+    <a href="support.html">认证说明</a>
+    <a href="https://github.com/CCief/DigForWealth">GitHub</a>
+    <a class="nav-cta" href="https://afdian.com/a/CCief" rel="me">爱发电 ↗</a>
+  </nav>
+</header>
+
+<main id="main" class="page-main">
+  <div class="page-head">
+    <p class="kicker">PLAYER CENTER</p>
+    <h1>玩家中心</h1>
+    <p class="lead">查看自己的订单、支付状态与兑换码。当前<strong>尚未开放</strong>，本页只说明将来会有什么，不提供登录或查询功能。</p>
+  </div>
+
+  <section class="section" aria-labelledby="state-title">
+    <div class="status-strip">
+      <p class="kicker">当前状态</p>
+      <strong>未开放 · 后端与账号方案待定</strong>
+      <span class="pill pill-muted">无登录</span>
+      <span class="pill pill-muted">无订单</span>
+      <span class="pill pill-muted">无兑换码</span>
+    </div>
+    <p class="callout" style="margin-top:20px"><strong>本页不收集任何信息。</strong>没有输入框、没有账号、没有订单查询接口，也不会因为访问本页产生兑换码。请勿向任何第三方提供付款信息或所谓「订单号换码」。</p>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="planned-title">
+    <h2 id="planned-title">开放后可以做的事</h2>
+    <div class="grid-2" style="margin-top:20px">
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">🧾</span>
+        <h3>我的订单</h3>
+        <p>查看订单编号、商品、金额、支付状态与支付时间；只能看到属于自己的订单。</p>
+      </article>
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">🔑</span>
+        <h3>我的兑换码</h3>
+        <p>查看已分配的兑换码、复制兑换码，以及是否已使用、是否已过期或被禁用。</p>
+      </article>
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">📜</span>
+        <h3>兑换记录</h3>
+        <p>查看兑换时间、兑换结果与绑定记录，所有核验都在后端完成。</p>
+      </article>
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">✅</span>
+        <h3>兑换码验证</h3>
+        <p>输入兑换码后由后端检查是否存在、是否使用过、是否过期或被禁用，再完成绑定。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="identity-title">
+    <h2 id="identity-title">关于登录方式</h2>
+    <p>爱发电 OAuth2 需要向官方私信申请，提供应用名称、用途、可信域名后由官方分配 <code>clientID</code> 与 <code>clientSecret</code>；目前<strong>尚未申请</strong>。在拿到凭据并核实授权返回字段之前，不会假设它一定能提供所需的玩家标识。</p>
+    <p>因此玩家身份方案保持待定：数据库字段会预留 <code>afdian_user_id</code>（可为空），后续可选「爱发电 OAuth2 登录」或「订单号 + 取货凭证」等不依赖 OAuth2 的方式。方案确定后会在<a href="news.html">公告页</a>说明，并同步更新 <a href="ROADMAP.md">开发计划</a>。</p>
+    <p class="note">无论采用哪种登录方式，玩家都只能查询自己的订单与兑换码；管理员接口与玩家接口分离，且需要独立身份验证。</p>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="links-title">
+    <h2 id="links-title">现在能做什么</h2>
+    <p>可以看看<a href="game.html">游戏介绍</a>、读<a href="news.html">公告</a>，或者到 <a href="https://afdian.com/a/CCief" rel="me">爱发电</a> 支持创作 —— 但请记住，赞助目前不包含内测资格。</p>
+    <p style="margin-top:18px"><a class="btn btn-outline" href="beta.html">查看内测资格状态 →</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-title">掘地生财 <small>DigForWealth</small></p>
+      <p>从挖地开始，以富足为目标。</p>
+      <p class="footer-muted">当前状态：企划阶段 · 暂无可下载版本</p>
+    </div>
+    <div>
+      <p class="footer-title">官方链接</p>
+      <p>爱发电：<a href="https://afdian.com/a/CCief" rel="me">https://afdian.com/a/CCief</a></p>
+      <p>官网：<a href="https://ccief.github.io/DigForWealth/">https://ccief.github.io/DigForWealth/</a></p>
+      <p>仓库：<a href="https://github.com/CCief/DigForWealth">github.com/CCief/DigForWealth</a></p>
+    </div>
+    <div>
+      <p class="footer-title">站内</p>
+      <p><a href="./">首页</a> · <a href="game.html">游戏介绍</a> · <a href="news.html">公告</a></p>
+      <p><a href="beta.html">内测资格</a> · <a href="CHANGELOG.md">更新日志</a> · <a href="support.html">认证专页</a></p>
+      <p class="footer-muted">本仓库不存放游戏源码</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 CCief · 本站文案与更新日志版权归 CCief 所有 · 未声明开源许可</p>
+</footer>
+</body>
+</html>
